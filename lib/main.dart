@@ -40,16 +40,15 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
 
-        title: Text("Home Page "),
+        title: Text("Text Widget"),
+        backgroundColor: Colors.red,
       ),
-       body:Center(
-         child: Container(
-           height: 125,
-           width: 140,
-           color:Colors.black54,
-           child: Center(child: Text('hey , this is practice',style: TextStyle(color: Colors.black),)),
-         ),
-       )
+       body:Text('nais',style: TextStyle(
+         fontSize: 25,
+         color: Colors.amber,
+         fontWeight: FontWeight.w800,
+         fontStyle: FontStyle.italic,
+       ),)
 
 
     );
