@@ -37,18 +37,21 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
 
+
     return Scaffold(
       appBar: AppBar(
 
         title: Text("Text Widget"),
         backgroundColor: Colors.red,
       ),
-       body:Text('nais',style: TextStyle(
-         fontSize: 25,
-         color: Colors.amber,
-         fontWeight: FontWeight.w800,
-         fontStyle: FontStyle.italic,
-       ),)
+       body: TextButton(
+           child: Text('click here'),
+         onPressed: (){
+             print('this is text');
+       },
+
+       )
+        
 
 
     );
