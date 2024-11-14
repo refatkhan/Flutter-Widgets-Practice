@@ -45,7 +45,10 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Colors.red,
       ),
       body:Center(
-        child:Image.asset("assets/images/img.png") ,
+        child:Container(
+            width: 250,
+            height: 200,
+            child: Image.asset("assets/images/img.png")) ,
       )
 
       // body: OutlinedButton(onPressed: (){
