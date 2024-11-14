@@ -45,11 +45,12 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Colors.red,
       ),
 
-      body: ElevatedButton(onPressed: (){
-        print('Trying new button');
+      body: OutlinedButton(onPressed: (){
+
+        print("in outline button it creats border");
       },
 
-          child: Text('elevated button'))
+          child: Text('Outline button'))
       //  body: TextButton(
       //      child: Text('click here'),
       //    onPressed: (){
