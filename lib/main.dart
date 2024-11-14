@@ -45,12 +45,11 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Colors.red,
       ),
 
-      body: TextButton(
-          child: Text('nais Button',style:TextStyle(fontStyle: FontStyle.italic,fontSize: 25,fontWeight: FontWeight.w400,backgroundColor: Colors.redAccent ) ,),
-      onPressed:(){
-            print('happy long press');
-    },
-      )
+      body: ElevatedButton(onPressed: (){
+        print('Trying new button');
+      },
+
+          child: Text('elevated button'))
       //  body: TextButton(
       //      child: Text('click here'),
       //    onPressed: (){
