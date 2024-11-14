@@ -41,16 +41,19 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
 
-        title: Text("Text Widget"),
+        title: Text("Image Add"),
         backgroundColor: Colors.red,
       ),
+      body:Center(
+        child:Image.asset("assets/images/img.png") ,
+      )
 
-      body: OutlinedButton(onPressed: (){
-
-        print("in outline button it creats border");
-      },
-
-          child: Text('Outline button'))
+      // body: OutlinedButton(onPressed: (){
+      //
+      //   print("in outline button it creats border");
+      // },
+      //
+      //     child: Text('Outline button'))
       //  body: TextButton(
       //      child: Text('click here'),
       //    onPressed: (){
