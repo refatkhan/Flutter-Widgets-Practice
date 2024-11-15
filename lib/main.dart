@@ -44,12 +44,21 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text("Image Add"),
         backgroundColor: Colors.red,
       ),
-      body:Center(
-        child:Container(
-            width: 250,
-            height: 200,
-            child: Image.asset("assets/images/img.png")) ,
-      )
+
+      body: Column(
+        children: [
+          Text('data',style: TextStyle(fontSize: 25),),
+          Text('data2',style: TextStyle(fontSize: 26,),),
+          Text('data3',style: TextStyle(fontSize: 26,),),
+          Text('data4',style: TextStyle(fontSize: 26,),),
+        ],
+      ),
+      // body:Center(
+      //   child:Container(
+      //       width: 250,
+      //       height: 200,
+      //       child: Image.asset("assets/images/img.png")) ,
+      // )
 
       // body: OutlinedButton(onPressed: (){
       //
