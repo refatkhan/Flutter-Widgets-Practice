@@ -45,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Colors.red,
       ),
 
-      body: Column(
+      body: Row(
         children: [
           Text('data',style: TextStyle(fontSize: 25),),
           Text('data2',style: TextStyle(fontSize: 26,),),
