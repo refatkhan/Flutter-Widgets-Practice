@@ -45,8 +45,9 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Colors.red,
       ),
 
-      body: Column(
-        children: <Text> [
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: <Widget> [
           Text('data',style: TextStyle(fontSize: 25),),
           Text('data2',style: TextStyle(fontSize: 26,),),
           Text('data3',style: TextStyle(fontSize: 26,),),
