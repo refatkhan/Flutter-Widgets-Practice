@@ -45,14 +45,19 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Colors.red,
       ),
 
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: <Widget> [
-          Text('data',style: TextStyle(fontSize: 25),),
-          Text('data2',style: TextStyle(fontSize: 26,),),
-          Text('data3',style: TextStyle(fontSize: 26,),),
-          Text('data4',style: TextStyle(fontSize: 26,),),
-        ],
+      body: Container(
+        // width: 300,
+        height: 150,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: <Widget> [
+            Text('data',style: TextStyle(fontSize: 25),),
+            Text('data2',style: TextStyle(fontSize: 26,),),
+            Text('data3',style: TextStyle(fontSize: 26,),),
+            Text('data4',style: TextStyle(fontSize: 26,),),
+          ],
+        ),
       ),
       // body:Center(
       //   child:Container(
