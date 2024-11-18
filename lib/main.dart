@@ -44,21 +44,41 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text("Image Add"),
         backgroundColor: Colors.red,
       ),
-
-      body: Container(
-        // width: 300,
-        height: 150,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          crossAxisAlignment: CrossAxisAlignment.end,
-          children: <Widget> [
-            Text('data',style: TextStyle(fontSize: 25),),
-            Text('data2',style: TextStyle(fontSize: 26,),),
-            Text('data3',style: TextStyle(fontSize: 26,),),
-            Text('data4',style: TextStyle(fontSize: 26,),),
-          ],
-        ),
+body:Center(
+    child: InkWell(
+      onTap: (){
+        print('tap on container');
+      },
+      onDoubleTap: (){
+        print('nais double touch');
+      },
+      child: Container(
+        width: 350,
+        height: 350,
+        color: Colors.amber,
+        child: InkWell( onTap: (){
+          print('clicked at text');
+        }, child: Center(child: Text('Tap here',style: TextStyle(fontSize: 26,backgroundColor: Colors.black,color: Colors.white),))),
+        
       ),
+    )
+)
+
+      // body: Container(
+      //    width: 300,
+      //   // height: 300,
+      //   child: Column(
+      //
+      //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //     crossAxisAlignment: CrossAxisAlignment.center,
+      //     children: <Widget> [
+      //       Text('data1',style: TextStyle(fontSize: 25),),
+      //       Text('data2',style: TextStyle(fontSize: 26,),),
+      //       Text('data3',style: TextStyle(fontSize: 26,),),
+      //       Text('data4',style: TextStyle(fontSize: 26,),),
+      //     ],
+      //   ),
+      // ),
       // body:Center(
       //   child:Container(
       //       width: 250,
